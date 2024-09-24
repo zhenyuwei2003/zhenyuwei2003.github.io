@@ -135,10 +135,6 @@ h2 {
   -webkit-transition: opacity .2s ease-in-out;
 }
 
-span.highlight {
-  background-color: #ffffd0;
-}
-
 .modal {
   display: none;
   position: fixed;
@@ -173,4 +169,8 @@ span.highlight {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+span.highlight {
+  background-color: #ffffd0;
 }
