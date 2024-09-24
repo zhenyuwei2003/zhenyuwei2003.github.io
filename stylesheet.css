@@ -63,6 +63,7 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+/* href */
 a {
   color: #1772d0;
   text-decoration: none;
@@ -74,10 +75,14 @@ a:hover {
   text-decoration: none;
 }
 
-body,
+body {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+tr,
 td,
 th,
-tr,
 p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
@@ -87,52 +92,41 @@ a {
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
+  text-decoration: underline;
 }
 
 h2 {
   margin: 0;
   font-weight: normal;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 24px;
+  text-decoration: underline;
+  text-decoration-color: #66c0ff;
+  text-decoration-thickness: 3px;
 }
 
-.papertitle {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+h3 {
+  margin: 0;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: bold;
 }
 
-.author {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-}
-
-.name {
+.webname {
   padding-top: 20px;
   margin: 0;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 32px;
 }
 
-.one {
-  width: 160px;
-  height: 160px;
-  position: relative;
+.papertitle {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
 }
 
-.two {
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+.author {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
 }
 
 .modal {
@@ -152,6 +146,7 @@ h2 {
   padding: 20px;
   background-color: white;
   border-radius: 10px;
+  border: 5px solid #66c0ff;
   width: 32%;
   max-width: 400px;
 }
@@ -171,6 +166,15 @@ h2 {
   cursor: pointer;
 }
 
-span.highlight {
-  background-color: #ffffd0;
+.dates {
+  font-size: 16px;
+  color: gray;
+  float: right;
+}
+
+@media (max-width: 768px) {
+  body {
+    transform: scale(0.85); /* 根据需要调整缩小比例 */
+    transform-origin: top left; /* 确保缩放从页面左上角开始 */
+  }
 }
