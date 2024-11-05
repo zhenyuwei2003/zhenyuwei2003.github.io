@@ -65,7 +65,7 @@
 
 /* href */
 a {
-  color: #1772d0;
+  color: #0095ff;
   text-decoration: none;
 }
 
@@ -113,9 +113,18 @@ h3 {
   font-weight: bold;
 }
 
-.strong-venue {
-  color: #ff9547;
+.award-venue {
+  color: #FFA434;
   font-weight: bold;
+}
+
+.strong-venue {
+  color: #a88bf8;
+  font-weight: bold;
+}
+
+.venue {
+  color: #1769ff;
 }
 
 .TLDR {
