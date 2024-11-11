@@ -99,19 +99,21 @@
             </table>
 
             <!-- News -->
-            <!-- <table style="width:100%; border:0px; border-spacing:0px; border-collapse:separate; margin-left:auto; margin-right:auto;">
+            <table style="width:100%; border:0px; border-spacing:0px; border-collapse:separate; margin-left:auto; margin-right:auto;">
               <tbody>
                 <tr>
                   <td style="padding-top: 0px; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; width:100%; vertical-align:middle">
                     <h2><b>News</b></h2>
-                    <ul class="award-list">
-                      <li>[Oct, 2024] xxx!</li>
-                      <li>[Oct, 2024] xxx!</li>
+                    <ul class="news-list">
+                      <li>
+                        [2024/11] 🎉 <b>$\mathcal{D(R, O)}$ Grasp</b> won the 
+                        <strong style="color: red;">Best Robotics Paper Award</strong></a> at CoRL 2024 MAPoDeL Workshop!
+                      </li>
                     </ul>
                   </td>
                 </tr>
               </tbody>
-            </table> -->
+            </table>
 
             <!-- Research Interest -->
             <table style="width:100%; border:0px; border-spacing:0px; border-collapse:separate; margin-left:auto; margin-right:auto;">
@@ -120,8 +122,8 @@
                   <td style="padding-top: 0px; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; width:100%; vertical-align:middle">
                     <h2><b>Research</b></h2>
                     <p>
-                      My research interests lie in 🤖robot learning and 🦾dexterous manipulation. My long-term goal is to make robots an indispensable 
-                      part of our lives, transforming the way we live. I'm open to collaborations on robotics related projects! If you are a researcher 
+                      My research interests lie in 🤖robot learning and 🦾dexterous manipulation. My long-term goal is to make robots an essential
+                      part of daily life, reshaping how we live. I'm open to collaborations on robotics related projects! If you are a researcher 
                       looking for a partner, feel free to contact me🤟.
 
                     </p>
@@ -159,32 +161,6 @@
                     <span class="author">Jiayu Luo</span>,
                     <span class="author">Lin Shao</span>
                     <br>
-
-                    <!-- venue -->
-                    <div style="margin-top: 5px; margin-bottom: 5px;">
-                      <span class="venue">
-                        In submission to IEEE International Conference on Robotics & Automation (ICRA), 2025
-                      </span>
-                      <br>
-                      <span class="award-venue">
-                        <i class="fa-solid fa-trophy"></i>
-                          Best Robotics Paper Award @ CoRL 2024 Workshop MAPoDeL
-                        <i class="fa-solid fa-trophy"></i>
-                      </span>
-                      <br>
-                      <span class="strong-venue">
-                        <i class="fa-solid fa-star"></i>
-                          Oral Presentation @ CoRL 2024 Workshop MAPoDeL
-                        <i class="fa-solid fa-star"></i>
-                      </span>
-                      <br>
-                      <span class="strong-venue">
-                        <i class="fa-solid fa-star"></i>
-                          Oral Presentation @ CoRL 2024 Workshop LFDM
-                        <i class="fa-solid fa-star"></i>
-                      </span>
-                      <br>
-                    </div>
                     
                     <!-- info -->
                     <a href="https://nus-lins-lab.github.io/drograspweb/">Website</a>
@@ -193,6 +169,50 @@
                     &nbsp;/&nbsp;
                     <a href="https://github.com/zhenyuwei2003/DRO-Grasp">Code</a>
                     <br>
+
+                    <!-- venue -->
+                    <div>
+                      In submission to <span class="venue">ICRA 2025</span>
+                      <br>
+                      <span class="venue">CoRL 2024 @ MAPoDeL</span>&nbsp;
+                      <a href="javascript:void(0)" class="award-venue" onclick="openDROAward()">
+                          <i class="fa-solid fa-trophy"></i> Best Robotics Paper Award (Oral Presentation) <i class="fa-solid fa-trophy"></i>
+                      </a>
+                      <!-- <span class="strong-venue">
+                        <i class="fa-solid fa-star"></i> Oral Presentation <i class="fa-solid fa-star"></i>
+                      </span> -->
+                      <br>
+                      <span class="venue">CoRL 2024 @ LFDM</span>&nbsp;
+                      <span class="strong-venue">
+                        <i class="fa-solid fa-star"></i> Spotlight Presentation <i class="fa-solid fa-star"></i>
+                      </span>
+                      <br>
+
+                      <div id="DROAward" class="modal">
+                        <div class="modal-content" style="width: 50%; max-width: 800px; margin-top: 8%;">
+                          <span class="close" onclick="closeDROAward()">&times;</span>
+                          <img src="images/Best Robotics Paper Award @ CoRL 2024 MAPoDeL.jpg" alt="D(R,O) Award Image" style="width: 100%;">
+                        </div>
+                      </div>
+                      
+                      <script>
+                        function openDROAward() {
+                          document.getElementById("DROAward").style.display = "block";
+                        }
+                        function closeDROAward() {
+                          document.getElementById("DROAward").style.display = "none";
+                        }
+                        window.onload = function() {
+                          document.getElementById("DROAward").style.display = "none";
+                        };
+                        window.onclick = function(event) {
+                          var modal = document.getElementById("DROAward");
+                          if (event.target == modal) {
+                            modal.style.display = "none";
+                          }
+                        }
+                      </script>
+                    </div>
                     
                     <div class="TLDR">
                       <strong>TL;DR:</strong> 
@@ -225,17 +245,17 @@
                       <span class="author">Cewu Lu</span>
                       <br>
       
-                      <!-- venue -->
-                      <div style="margin-top: 5px; margin-bottom: 5px;">
-                        <span class="venue">
-                          In submission (Minor Revisions) to Transactions on Pattern Analysis and Machine Intelligence (TPAMI)<br>
-                          <!-- IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) -->
-                        </span>
-                      </div>
-      
                       <!-- info -->
                       arXiv
+                      &nbsp;/&nbsp;
+                      <a href="https://github.com/BoPang1996/IRC">Code</a>
                       <br> 
+      
+                      <!-- venue -->
+                      <div>
+                        In submission (Minor Revisions) to <span class="venue">T-PAMI</span>
+                        <br>
+                      </div>
                       
                       <div class="TLDR">
                         <strong>TL;DR:</strong> 
@@ -257,27 +277,31 @@
                     <h2><b>Award</b></h2>
                     <ul class="award-list">
                       <li>
-                        <span><b>The Tung Foundation Scholarship</b> (Top 5%)</span>
-                        <span class="year"><i>2022</i></span>
-                      </li>
-                      <li>
-                        <span><b>Huawei Scholarship</b> (Top 5%)</span>
-                        <span class="year"><i>2023</i></span>
-                      </li>
-                      <li>
-                        <span><b>Outstanding Scholarship of Computer Science Alumni Fund</b> (Top 5%)</span>
+                        <span><b>Best Robotics Paper Award</b>, CoRL 2024 @ MAPoDeL</span>
                         <span class="year"><i>2024</i></span>
                       </li>
                       <li>
-                        <span><b>Zhiyuan Honors Scholarship</b> (Top 5%)</span>
+                        <span>Outstanding Scholarship of Computer Science Alumni Fund (Top 5%)</span>
+                        <span class="year"><i>2024</i></span>
+                      </li>
+                      <li>
+                        <span>Huawei Scholarship (Top 5%)</span>
+                        <span class="year"><i>2023</i></span>
+                      </li>
+                      <li>
+                        <span>The Tung Foundation Scholarship (Top 5%)</span>
+                        <span class="year"><i>2022</i></span>
+                      </li>
+                      <li>
+                        <span>Zhiyuan Honors Scholarship (Top 5%)</span>
                         <span class="year"><i>2021 &nbsp;&&nbsp; 2022 &nbsp;&&nbsp; 2023</i></span>
                       </li>
                       <li>
-                        <span><b>SJTU Merit Student</b> (Top 10%)</span>
+                        <span>Merit Student of Shanghai Jiao Tong University</span>
                         <span class="year"><i>2022 &nbsp;&&nbsp; 2023</i></span>
                       </li>
                       <li>
-                        <span><b>SJTU Merit Scholarship</b> (Top 10%)</span>
+                        <span>Merit Scholarship of Shanghai Jiao Tong University</span>
                         <span class="year"><i>2022 &nbsp;&&nbsp; 2023</i></span>
                       </li>
                     </ul>
@@ -309,11 +333,9 @@
                       National University of Singapore, Singapore
                       <span class="dates">2024.06 - present</span>
                     </h3>
-                    <span class="experience-author">
-                      Research Assistant
-                      <br>
-                      Advisor: Prof. <a href="https://linsats.github.io/">Lin Shao</a>
-                    </span>
+                    <b>Research Assistant</b>
+                    <br>
+                    Research Advisor: Prof. <a href="https://linsats.github.io/">Lin Shao</a>
                   </td>
                 </tr>
               </tbody>
@@ -331,11 +353,9 @@
                       SJTU Machine Vision and Intelligence Group (MVIG), China
                       <span class="dates">2022.10 - 2024.05</span>
                     </h3>
-                    <span class="experience-author">
-                      Research Intern
-                      <br>
-                      Advisor: Prof. <a href="https://www.mvig.org/">Cewu Lu</a>
-                    </span>
+                    <b>Research Intern</b>
+                    <br>
+                    Research Advisor: Prof. <a href="https://www.mvig.org/">Cewu Lu</a>
                   </td>
                 </tr>
               </tbody>
@@ -353,9 +373,9 @@
                       SJTU-THU-PKU Computer Science Summer School, China
                       <span class="dates">2023.07</span>
                     </h3>
-                    <span class="experience-author">
-                      Participant
-                    </span>
+                    <b>Participant</b>
+                    <br>
+                    Achieved A+ in all courses
                   </td>
                 </tr>
               </tbody>
@@ -373,9 +393,9 @@
                       Shanghai Jiao Tong University, China
                       <span class="dates">2021.09 - 2025.06</span>
                     </h3>
-                    <span class="experience-author">
-                      Undergraduate Student
-                    </span>
+                    B.E. in Computer Science (Zhiyuan Honors Program of Engineering)
+                    <br>
+                    <b>GPA:</b> 4.01/4.3
                   </td>
                 </tr>
               </tbody>
@@ -395,7 +415,7 @@
                       <!-- <span id="busuanzi_container_site_pv">
                         Total Page Views: <span id="busuanzi_value_site_pv"></span>
                       </span> -->
-                      This website is designed based on <a href="https://jonbarron.info/">Jon Barron</a>. Last Update: Oct. 31, 2024
+                      This website is designed based on <a href="https://jonbarron.info/">Jon Barron</a>. Last Update: Nov. 11, 2024
                     </p>
                   </td>
                 </tr>

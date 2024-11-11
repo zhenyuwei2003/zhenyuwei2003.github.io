@@ -71,7 +71,7 @@ a {
 
 a:focus,
 a:hover {
-  color: #f09228;
+  color: #FF9547;
   text-decoration: none;
 }
 
@@ -114,17 +114,18 @@ h3 {
 }
 
 .award-venue {
-  color: #FFA434;
+  color: #ff9547;
   font-weight: bold;
 }
 
 .strong-venue {
-  color: #a88bf8;
+  color: #ff6fbe;
   font-weight: bold;
 }
 
 .venue {
-  color: #1769ff;
+  font-weight: bold;
+  font-style: italic;
 }
 
 .TLDR {
@@ -136,18 +137,19 @@ h3 {
   font-weight: bold;
 }
 
-.experience-author {
+.news-list {
+  list-style-type: disc;
   font-size: 14px;
 }
 
 .award-list {
   list-style-type: disc;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .award-list li {
   margin-bottom: 3px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .award-list .year {
@@ -185,7 +187,7 @@ h3 {
 }
 
 .modal-content {
-  margin: 15% auto;
+  margin: 10% auto;
   padding: 20px;
   background-color: white;
   border-radius: 10px;
