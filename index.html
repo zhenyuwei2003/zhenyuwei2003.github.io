@@ -105,8 +105,11 @@
                   <td style="padding-top: 0px; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; width:100%; vertical-align:middle">
                     <h2><b>News</b></h2>
                     <ul class="news-list">
+                      <!-- <li> 
+                        [2024/12] 🎉 IRC is accepted to TPAMI.
+                      </li> -->
                       <li>
-                        [2024/11] 🎉 <b>$\mathcal{D(R, O)}$ Grasp</b> won the 
+                        [2024/11] 🏆 <a href="https://nus-lins-lab.github.io/drograspweb/"><b>$\mathcal{D(R, O)}$ Grasp</b></a> won the 
                         <strong style="color: red;">Best Robotics Paper Award</strong></a> at CoRL 2024 MAPoDeL Workshop!
                       </li>
                     </ul>
@@ -134,6 +137,62 @@
             <!-- Paper List -->
             <table style="width:96%; border:0px; border-spacing:0px; border-collapse:separate; margin-left:auto; margin-right:auto;">
               <tbody>
+                
+                <!-- MetaFold -->
+                <tr>
+                  <!-- cover -->
+                  <td style="padding:10px; width:25%; vertical-align:middle">
+                    <img src='images/MetaFold.png' style="width:100%; height:auto; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);">
+                  </td>
+    
+                  <!-- content -->
+                  <td style="padding:10px; width:75%; vertical-align:middle">
+                    <!-- title -->
+                    <span class="papertitle">
+                      MetaFold: Language-Guided Multi-Category Garment Folding Framework via Trajectory Generation and Foundation Model
+                    </span>
+                    <br>
+    
+                    <!-- author -->
+                    <span class="author">Haonan Chen</span>,
+                    <span class="author">Junxiao Li</span>,
+                    <span class="author">Ruihai Wu</span>,
+                    <span class="author">Yiwei Liu</span>,
+                    <span class="author">Chongkai Gao</span>,
+                    <span class="author">Zhixuan Xu</span>,
+                    <span class="author">Yiwen Hou</span>,
+                    <span class="author">Jingxiang Guo</span>,
+                    <span class="strong-author">Zhenyu Wei</span>,
+                    <span class="author">Siang Chen</span>,
+                    <span class="author">Chenting Wang</span>,
+                    <span class="author">Shensi Xu</span>,
+                    <span class="author">Jiaqi Huang</span>,
+                    <span class="author">Weidong Wang</span>,
+                    <span class="author">Lin Shao</span>,
+                    <br>
+    
+                    <!-- info -->
+                    Website  
+                    <!-- <a href="https://meta-fold.github.io/">Website</a> -->
+                    &nbsp;/&nbsp;
+                    arXiv
+                    &nbsp;/&nbsp;
+                    Code
+                    <br> 
+    
+                    <!-- venue -->
+                    <div>
+                      In submission to <span class="venue">CVPR 2025</span>
+                      <br>
+                    </div>
+                    
+                    <div class="TLDR">
+                      <strong>TL;DR:</strong> 
+                      MetaFold employs language-guided point cloud trajectories for task planning and a foundation model for
+                      action prediction, enabling better generalization across garments and instructions.
+                    </div>
+                  </td>
+                </tr>
 
                 <!-- D(R,O) Grasp -->
                 <tr style="background-color: rgba(102, 192, 255, 0.15);">
@@ -224,52 +283,52 @@
 
                 <!-- IRC -->
                 <tr>
-                    <!-- cover -->
-                    <td style="padding:10px; width:25%; vertical-align:middle">
-                      <img src='images/IRC.png' style="width:100%; height:auto; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);">
-                    </td>
-      
-                    <!-- content -->
-                    <td style="padding:10px; width:75%; vertical-align:middle">
-                      <!-- title -->
-                      <span class="papertitle">
-                        Auto-Pairing Positives through Implicit Relation Circulation for Discriminative Self-Learning
-                      </span>
+                  <!-- cover -->
+                  <td style="padding:10px; width:25%; vertical-align:middle">
+                    <img src='images/IRC.png' style="width:100%; height:auto; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);">
+                  </td>
+    
+                  <!-- content -->
+                  <td style="padding:10px; width:75%; vertical-align:middle">
+                    <!-- title -->
+                    <span class="papertitle">
+                      Auto-Pairing Positives through Implicit Relation Circulation for Discriminative Self-Learning
+                    </span>
+                    <br>
+    
+                    <!-- author -->
+                    <span class="author">Bo Pang</span>,
+                    <span class="strong-author">Zhenyu Wei</span>, 
+                    <span class="author">Jingli Lin</span>,
+                    <span class="author">Cewu Lu</span>
+                    <br>
+    
+                    <!-- info -->
+                    arXiv
+                    &nbsp;/&nbsp;
+                    <a href="https://github.com/BoPang1996/IRC">Code</a>
+                    <br> 
+    
+                    <!-- venue -->
+                    <div>
+                      In submission (Minor Revisions) to <span class="venue">T-PAMI</span>
                       <br>
-      
-                      <!-- author -->
-                      <span class="author">Bo Pang</span>,
-                      <span class="strong-author">Zhenyu Wei</span>, 
-                      <span class="author">Jingli Lin</span>,
-                      <span class="author">Cewu Lu</span>
-                      <br>
-      
-                      <!-- info -->
-                      arXiv
-                      &nbsp;/&nbsp;
-                      <a href="https://github.com/BoPang1996/IRC">Code</a>
-                      <br> 
-      
-                      <!-- venue -->
-                      <div>
-                        In submission (Minor Revisions) to <span class="venue">T-PAMI</span>
-                        <br>
-                      </div>
-                      
-                      <div class="TLDR">
-                        <strong>TL;DR:</strong> 
-                        Introduce Implicit Relation Circulation (IRC), a self-supervised learning framework leveraging random walks 
-                        across feature groups without explicit matching. By connecting it to a simpler task, cycle consistency enables 
-                        the automatic discovery of positive pairs.
-                      </div>
-                    </td>
-                  </tr>
+                    </div>
+                    
+                    <div class="TLDR">
+                      <strong>TL;DR:</strong> 
+                      Introduce Implicit Relation Circulation (IRC), a self-supervised learning framework leveraging random walks 
+                      across feature groups without explicit matching. By connecting it to a simpler task, cycle consistency enables 
+                      the automatic discovery of positive pairs.
+                    </div>
+                  </td>
+                </tr>
                   
               </tbody>
             </table>
 
             <!-- Award -->
-            <table style="width:100%; border:0px; border-spacing:0px; border-collapse:separate; margin-left:auto; margin-right:auto;">
+            <table style="width:100%; border:0px; border-spacing:0px; border-collapse:separate; margin-top: 20px; margin-left:auto; margin-right:auto;">
               <tbody>
                 <tr>
                   <td style="padding-top: 0px; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; width:100%; vertical-align:middle">
@@ -414,7 +473,7 @@
                       <!-- <span id="busuanzi_container_site_pv">
                         Total Page Views: <span id="busuanzi_value_site_pv"></span>
                       </span> -->
-                      This website is designed based on <a href="https://jonbarron.info/">Jon Barron</a>. Last Update: Nov. 11, 2024
+                      This website is designed based on <a href="https://jonbarron.info/">Jon Barron</a>. Last Update: Nov. 16, 2024
                     </p>
                   </td>
                 </tr>
