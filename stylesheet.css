@@ -106,6 +106,16 @@ h3 {
   padding-bottom: 6px;
 }
 
+/* .highlight {
+  background-color: #E8D6FF;
+  color: #5B3E96;
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  line-height: 2
+} */
+
 .strong-author {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
