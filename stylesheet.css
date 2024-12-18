@@ -84,9 +84,10 @@ tr,
 td,
 th,
 p,
-a {
+a,
+li {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 h2 {
@@ -101,7 +102,7 @@ h2 {
 
 h3 {
   margin: 0;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   padding-bottom: 6px;
 }
