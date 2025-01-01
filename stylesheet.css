@@ -125,13 +125,13 @@ h3 {
 
 .venue {
   font-weight: bold;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 .accepted-venue {
   background-color: #EBD7F0;
   color: #5B3285;
-  padding: 3px 8px;
+  padding: 2px 6px;
   border-radius: 15px;
   font-size: 16px;
   font-weight: bold;
@@ -140,7 +140,6 @@ h3 {
 
 .accepted-venue-detail {
   font-weight: bold;
-  font-style: italic;
   color: #663399;
 }
 
