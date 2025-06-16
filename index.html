@@ -101,6 +101,7 @@
                   <td style="padding-top: 0px; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; width:100%; vertical-align:middle">
                     <h2><b>News</b></h2>
                     <ul class="news-list">
+                      <li> [2025/06] 🎉 <a href="https://meta-fold.github.io/">MetaFold</a> has been accepted to IROS 2025. </li>
                       <li> [2025/05] 🏅 <a href="https://nus-lins-lab.github.io/drograspweb/">$\small \mathcal{D(R, O)}$ Grasp</a> won the <strong style="color: red;">ICRA 2025 Best Paper Award on Robot Manipulation and Locomotion</strong>,
                            and <a href="https://nus-lins-lab.github.io/telepreview-web/">TelePreview</a> won the <strong style="color: red;">Best Paper Award</strong> at ICRA 2025 Workshop on Human-Centric Multilateral Teleoperation! </li>
                       <li> [2025/04] 🏅 <a href="https://nus-lins-lab.github.io/drograspweb/">$\small \mathcal{D(R, O)}$ Grasp</a> has been selected as an <strong style="color: red;">ICRA 2025 Best Paper Award Finalist</strong>! </li>
@@ -162,20 +163,58 @@
                     <a href="https://nus-lins-lab.github.io/telepreview-web/">Website</a>
                     &nbsp;/&nbsp;
                     <a href="https://arxiv.org/abs/2412.13548">arXiv</a>
-                    &nbsp;/&nbsp;
-                    Code (Coming soon)
+                    <!-- &nbsp;/&nbsp;
+                    Code (Coming soon) -->
                     <br>
 
                     <div>
                       <span class="award-venue">
-                        <i class="fa-solid fa-trophy"></i> Best Paper Award, ICRA 2025
-                        <a href="https://sites.google.com/view/icra-2025-workshop?usp=sharing" style="color: #ffa03c">@ Human-Centric Multilateral Teleoperation </a><i class="fa-solid fa-trophy"></i>
+                        <i class="fa-solid fa-trophy"></i>
+                        <a href="javascript:void(0)" class="award-venue" onclick="openModal('TelePreviewAwardICRA')">
+                          Best Paper Award</a>, ICRA 2025
+                        <a href="https://sites.google.com/view/icra-2025-workshop?usp=sharing" style="color: #ffa03c">
+                          @ Human-Centric Multilateral Teleoperation
+                        </a>
+                        <i class="fa-solid fa-trophy"></i>
                       </span>
                       <br>
                       <span class="strong-venue">
-                        <i class="fa-solid fa-star"></i> Spotlight Presentation, ICRA 2025
-                        <a href="https://sites.google.com/view/icra-2025-workshop?usp=sharing" style="color: #66c0ff">@ Human-Centric Multilateral Teleoperation </a><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i> 
+                        ICRA 2025
+                        <a href="https://sites.google.com/view/icra-2025-workshop?usp=sharing" style="color: #66c0ff">
+                          Human-Centric Multilateral Teleoperation Workshop (Spotlight)
+                        </a>
+                        <i class="fa-solid fa-star"></i>
                       </span>
+
+                      <div id="TelePreviewAwardICRA" class="modal">
+                        <div class="modal-content" style="width: 50%; max-width: 800px; margin-top: 8%;">
+                          <span class="close" onclick="closeModal('TelePreviewAwardICRA')">&times;</span>
+                          <img src="images/Best Paper Award @ ICRA 2025 Human-Centric Multilateral Teleoperation Workshop.png" alt="Best Paper Award @ ICRA 2025 Human-Centric Multilateral Teleoperation Workshop" style="width: 100%;">
+                        </div>
+                      </div>
+
+                      <script>
+                        function openModal(id) {
+                          document.getElementById(id).style.display = "block";
+                        }
+                        function closeModal(id) {
+                          document.getElementById(id).style.display = "none";
+                        }
+                        window.onload = function () {
+                          document.getElementById("TelePreviewAwardICRA").style.display = "none";
+                        };
+                        window.onclick = function (event) {
+                          const modals = ["TelePreviewAwardICRA"];
+                          modals.forEach(id => {
+                            const modal = document.getElementById(id);
+                            if (event.target == modal) {
+                              modal.style.display = "none";
+                            }
+                          });
+                        };
+                      </script>
+
                     </div>
                     
                     <div class="TLDR">
@@ -221,7 +260,8 @@
                     <br> 
     
                     <div>
-                      Under review
+                      <span class="accepted-venue">IROS 2025</span>&nbsp;
+                      <span class="accepted-venue-detail">International Conference on Intelligent Robots and Systems</span>
                     </div>
                     
                     <div class="TLDR">
@@ -265,52 +305,70 @@
                     <a href="https://mp.weixin.qq.com/s/csdm7B3G9__QpwEtoIQxuA">Media (机器之心)</a>
                     <br>
 
-                    <div">
-                      <!-- ICRA 2025 -->
+                    <div>
                       <span class="accepted-venue">ICRA 2025</span>&nbsp;
                       <span class="accepted-venue-detail">International Conference on Robotics and Automation</span>
                       <br>
                       <span class="award-venue">
-                        <i class="fa-solid fa-trophy"></i> ICRA 2025 Best Paper Award on Robot Manipulation and Locomotion <i class="fa-solid fa-trophy"></i>
+                        <i class="fa-solid fa-trophy"></i>
+                        <a href="javascript:void(0)" class="award-venue" onclick="openModal('DROAwardICRA')">
+                          ICRA 2025 Best Paper Award on Robot Manipulation and Locomotion
+                        </a>
+                        <i class="fa-solid fa-trophy"></i>
                       </span>
                       <br>
                       <span class="award-venue">
                         <i class="fa-solid fa-trophy"></i>
-                        <a href="javascript:void(0)" class="award-venue" onclick="openDROAward()">Best Robotics Paper Award</a>, CoRL 2024
-                        <a href="https://sites.google.com/view/corl-mapodel-workshop/home" style="color: #ffa03c">@ MAPoDeL</a> <i class="fa-solid fa-trophy"></i>
+                        <a href="javascript:void(0)" class="award-venue" onclick="openModal('DROAwardCoRL')">
+                          Best Robotics Paper Award</a>, CoRL 2024
+                        <a href="https://sites.google.com/view/corl-mapodel-workshop/home" style="color: #ffa03c">
+                          @ MAPoDeL
+                        </a>
+                        <i class="fa-solid fa-trophy"></i>
                       </span>
                       <br>
                       <span class="strong-venue">
-                        <i class="fa-solid fa-star"></i> Oral Presentation, CoRL 2024 <a href="https://sites.google.com/view/corl-mapodel-workshop/home" style="color: #66c0ff">@ MAPoDeL</a> <i class="fa-solid fa-star"></i>
-                      </span>
-                      <br>
-                      <span class="strong-venue">
-                        <i class="fa-solid fa-star"></i> Spotlight Presentation, CoRL 2024 <a href="https://dex-manipulation.github.io/corl2024/index.html" style="color: #66c0ff">@ LFDM</a> <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        CoRL 2024 
+                        <a href="https://sites.google.com/view/corl-mapodel-workshop/home" style="color: #66c0ff">MAPoDeL Workshop</a> (Oral) & 
+                        <a href="https://dex-manipulation.github.io/corl2024/index.html" style="color: #66c0ff">LFDM Workshop</a> (Spotlight) 
+                        <i class="fa-solid fa-star"></i>
                       </span>
 
-                      <div id="DROAward" class="modal">
+                      <div id="DROAwardICRA" class="modal">
+                        <div class="modal-content" style="width: 50%; max-width: 800px; margin-top: 6%;">
+                          <span class="close" onclick="closeModal('DROAwardICRA')">&times;</span>
+                          <img src="images/ICRA 2025 Best Paper Award on Robot Manipulation and Locomotion.jpg" alt="ICRA 2025 Best Paper Award on Robot Manipulation and Locomotion" style="width: 100%;">
+                        </div>
+                      </div>
+
+                      <div id="DROAwardCoRL" class="modal">
                         <div class="modal-content" style="width: 50%; max-width: 800px; margin-top: 8%;">
-                          <span class="close" onclick="closeDROAward()">&times;</span>
-                          <img src="images/Best Robotics Paper Award @ CoRL 2024 MAPoDeL.jpg" alt="D(R,O) Award Image" style="width: 100%;">
+                          <span class="close" onclick="closeModal('DROAwardCoRL')">&times;</span>
+                          <img src="images/Best Robotics Paper Award @ CoRL 2024 MAPoDeL Workshop.jpg" alt="Best Robotics Paper Award @ CoRL 2024 MAPoDeL Workshop" style="width: 100%;">
                         </div>
                       </div>
                       
                       <script>
-                        function openDROAward() {
-                          document.getElementById("DROAward").style.display = "block";
+                        function openModal(id) {
+                          document.getElementById(id).style.display = "block";
                         }
-                        function closeDROAward() {
-                          document.getElementById("DROAward").style.display = "none";
+                        function closeModal(id) {
+                          document.getElementById(id).style.display = "none";
                         }
-                        window.onload = function() {
-                          document.getElementById("DROAward").style.display = "none";
+                        window.onload = function () {
+                          document.getElementById("DROAwardICRA").style.display = "none";
+                          document.getElementById("DROAwardCoRL").style.display = "none";
                         };
-                        window.onclick = function(event) {
-                          var modal = document.getElementById("DROAward");
-                          if (event.target == modal) {
-                            modal.style.display = "none";
-                          }
-                        }
+                        window.onclick = function (event) {
+                          const modals = ["DROAwardICRA", "DROAwardCoRL"];
+                          modals.forEach(id => {
+                            const modal = document.getElementById(id);
+                            if (event.target == modal) {
+                              modal.style.display = "none";
+                            }
+                          });
+                        };
                       </script>
                     </div>
                     
@@ -372,12 +430,8 @@
                   <td style="padding-top: 0px; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; width:100%; vertical-align:middle">
                     <h2><b>Award</b></h2>
                     <ul class="award-list">
-                      <!-- <li>
-                        <span style="font-size: 16px;">Zhiyuan Overseas Research Scholarship </span>
-                        <span style="font-size: 16px;" class="year"><i>2025</i></span>
-                      </li> -->
                       <li>
-                        <span style="font-size: 16px;"><b>Best Paper Award</b>, ICRA 2025 @ Human-Centric Multilateral Teleoperation</span>
+                        <span style="font-size: 16px;"><b>Best Paper Award</b>, ICRA 2025 @ Human-Centric Multilateral Teleoperation Workshop</span>
                         <span style="font-size: 16px;" class="year"><i>2025</i></span>
                       </li>
                       <li>
@@ -393,7 +447,7 @@
                         <span style="font-size: 16px;" class="year"><i>2025</i></span>
                       </li>
                       <li>
-                        <span style="font-size: 16px;"><b>Best Robotics Paper Award</b>, CoRL 2024 @ MAPoDeL</span>
+                        <span style="font-size: 16px;"><b>Best Robotics Paper Award</b>, CoRL 2024 @ MAPoDeL Workshop</span>
                         <span style="font-size: 16px;" class="year"><i>2024</i></span>
                       </li>
                       <li>
@@ -532,7 +586,7 @@
                         Total Page Views: <span id="busuanzi_value_site_pv"></span>
                       </span> -->
                       This website is designed based on <a href="https://jonbarron.info/" style="font-size: 12px;">Jon Barron</a>.
-                      Last Update: May 24, 2025
+                      Last Update: Jun. 16, 2025
                     </p>
                   </td>
                 </tr>
