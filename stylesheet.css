@@ -111,6 +111,7 @@ h3 {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: bold;
+  text-decoration: underline;
 }
 
 .award-venue {
