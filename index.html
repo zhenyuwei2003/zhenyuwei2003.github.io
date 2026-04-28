@@ -1,791 +1,412 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Zhenyu Wei</title>
-    
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="author" content="Zhenyu Wei">
-    <meta name="viewport" content="width=900px, initial-scale=0.8, maximum-scale=2.0, user-scalable=yes">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Zhenyu Wei" />
+    <meta name="description" content="Zhenyu Wei — Ph.D. student in Computer Science at UNC Chapel Hill. Research in dexterous manipulation and cross-embodiment learning." />
     <meta name="google-site-verification" content="ky_GtW3ix1x6MhH-pM6PonkpJCmE-237rRUvxvyQjVs" />
+    
+    <title>Zhenyu Wei | 卫振宇</title>
 
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <script defer src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } }); </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</head>
 
-    <!-- MathJax -->
-    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>        
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
-      });
+<body>
+    <header class="site-header">
+        <nav class="nav" aria-label="Main navigation">
+            <a class="brand" href="#">Zhenyu Wei</a>
+            <div class="nav-links">
+                <a href="#news">News</a>
+                <a href="#research">Research</a>
+                <a href="#honors">Honors</a>
+                <a href="#experience">Experience</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main" class="page">
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Ph.D. Student in Computer Science · Robotics</p>
+                <h1>Zhenyu Wei <span>卫振宇</span></h1>
+                <p class="bio">
+                    I am a first-year CS Ph.D. student at University of North Carolina at Chapel Hill, advised by 
+                    Prof. <a href="https://dingmyu.github.io/">Mingyu Ding</a>. 
+                    I received my Bachelor's degree in Computer Science at Shanghai Jiao Tong University.
+                    During my undergraduate years, I was fortunate to be advised by 
+                    Prof. <a href="https://www.mvig.org/">Cewu Lu</a>, 
+                    Prof. <a href="https://linsats.github.io/">Lin Shao</a>, and 
+                    Prof. <a href="http://hxu.rocks/">Huazhe Xu</a>.
+                </p>
+                <div class="link-row" aria-label="Profile links">
+                    <a href="mailto:wzhenyu@cs.unc.edu"><i class="fas fa-envelope"></i> Email</a>
+                    <a href="assets/CV_2604.pdf"><i class="fas fa-file-alt"></i> CV</a>
+                    <a href="https://github.com/zhenyuwei2003"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://scholar.google.com/citations?user=RlQ3QLMAAAAJ"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+                    <button class="button-link" type="button" data-modal-open="wechat-modal"><i class="fab fa-weixin"></i> WeChat</button>
+                </div>
+            </div>
+            <figure class="portrait-card">
+                <img src="assets/zhenyuwei.png" alt="Portrait of Zhenyu Wei" />
+            </figure>
+        </section>
+
+        <section id="news" class="section">
+            <div class="section-title"><span>01</span>
+                <h2>News</h2>
+            </div>
+            <div class="news-card">
+                <ol class="news-list">
+                    <li>
+                        <time>2026/04</time>
+                        <span>
+                            <a href="https://zhenyuwei2003.github.io/OHRA/">OHRA</a> has been accepted to RSS 2026!
+                        </span>
+                    </li>
+                    <li>
+                        <time>2025/08</time>
+                        <span>
+                            Started my Ph.D. journey at University of North Carolina at Chapel Hill!
+                        </span>
+                    </li>
+                    <li>
+                        <time>2025/06</time>
+                        <span>
+                            <a href="https://meta-fold.github.io/">MetaFold</a> has been accepted to IROS 2025 as 
+                            <strong>oral presentation</strong>!
+                        </span>
+                    </li>
+                    <li>
+                        <time>2025/05</time>
+                        <span>
+                            <a href="https://nus-lins-lab.github.io/drograspweb/">$\small \mathcal{D(R, O)}$ Grasp</a> 
+                            won the <strong class="award-text">ICRA 2025 Best Paper Award on Robot Manipulation and 
+                            Locomotion</strong>, and <a href="https://nus-lins-lab.github.io/telepreview-web/">TelePreview</a> 
+                            won the <strong class="award-text">Best Paper Award</strong> at ICRA 2025 Workshop on Human-Centric
+                            Multilateral Teleoperation!
+                        </span>
+                    </li>
+                    <li>
+                        <time>2025/01</time>
+                        <span>
+                            <a href="https://nus-lins-lab.github.io/drograspweb/">$\small \mathcal{D(R, O)}$ Grasp</a> 
+                            has been accepted to ICRA 2025!
+                        </span>
+                    </li>
+                    <li>
+                        <time>2024/12</time>
+                        <span>
+                            <a href="https://ieeexplore.ieee.org/document/10835191">IRC</a> has been accepted to TPAMI!
+                        </span>
+                    </li>
+                    <li>
+                        <time>2024/11</time>
+                        <span>
+                            <a href="https://nus-lins-lab.github.io/drograspweb/">$\small \mathcal{D(R, O)}$ Grasp</a> 
+                            won the <strong class="award-text">Best Robotics Paper Award</strong> at CoRL 2024 
+                            Morphology-Aware Policy and Design Learning Workshop!
+                        </span>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="research" class="section">
+            <div class="section-title"><span>02</span>
+                <h2>Research</h2>
+            </div>
+            <p class="section-intro">
+                My research focuses on dexterous manipulation, with an emphasis on cross-embodiment
+                learning. I aim to develop unified representations of robotic hands and actions, 
+                enabling general policies that transfer across different embodiments.
+            </p>
+            <div class="paper-toolbar" aria-label="Paper display options">
+                <div class="paper-filter" role="group" aria-label="Filter papers">
+                    <button class="filter-button is-active" type="button" data-paper-filter="all">Show all by date</button>
+                    <button class="filter-button" type="button" data-paper-filter="representative">Show representative</button>
+                </div>
+            </div>
+
+            <div class="paper-list">
+                <article class="paper featured" data-representative="true">
+                    <img src="assets/paper/OHRA.png" alt="OHRA project thumbnail" />
+                    <div>
+                        <h3>One Hand to Rule Them All: Canonical Representations for Unified Dexterous Manipulation</h3>
+                        <p class="authors">
+                            <strong>Zhenyu Wei</strong>, Yunchao Yao, Mingyu Ding
+                        </p>
+                        <p class="venue">
+                            <span class="venue-badge">RSS 2026</span> Robotics: Science and Systems XXII
+                        </p>
+                        <div class="paper-links">
+                            <a href="https://zhenyuwei2003.github.io/OHRA/">Website</a>
+                            <a href="https://arxiv.org/abs/2602.16712">arXiv</a>
+                            <a href="https://github.com/zhenyuwei2003/OHRA">Code</a>
+                            <a href="https://mp.weixin.qq.com/s/cp15BVTkxkZM7SH8wH4V8w">Media</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="paper" data-representative="false">
+                    <img src="assets/paper/VLA-VA.jpg" alt="Counterfactual VLA project thumbnail" />
+                    <div>
+                        <h3>When Vision Overrides Language: Evaluating and Mitigating Counterfactual Failures in VLAs
+                        </h3>
+                        <p class="authors">
+                            Yu Fang, Yuchun Feng, Dong Jing, Jiaqi Liu, Yue Yang, <strong>Zhenyu Wei</strong>, Daniel Szafir, Mingyu Ding
+                        </p>
+                        <div class="paper-links">
+                            <a href="https://vla-va.github.io/">Website</a>
+                            <a href="https://arxiv.org/abs/2602.17659">arXiv</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="paper" data-representative="false">
+                    <img src="assets/paper/MoH.png" alt="Mixture of Horizons project thumbnail" style="width: 65%; margin: 0 auto;" />
+                    <div>
+                        <h3>Mixture of Horizons in Action Chunking</h3>
+                        <p class="authors">
+                            Dong Jing, Gang Wang, Jiaqi Liu, Weiliang Tang, Zelong Sun, Yunchao Yao, <strong>Zhenyu Wei</strong>, Yunhui Liu, Zhiwu Lu, Mingyu Ding
+                        </p>
+                        <div class="paper-links">
+                            <a href="https://timsty1.github.io/moh/">Website</a>
+                            <a href="https://arxiv.org/abs/2511.19433">arXiv</a>
+                            <a href="https://github.com/Timsty1/MixtureOfHorizons">Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="paper featured" data-representative="true">
+                    <img src="assets/paper/RL-100.gif" alt="RL-100 project thumbnail" />
+                    <div>
+                        <h3>RL-100: Performant Robotic Manipulation with Real-World Reinforcement Learning</h3>
+                        <p class="authors">
+                            Kun Lei*, Huanyu Li*, Dongjie Yu*, <strong>Zhenyu Wei*</strong>, Lingxiao Guo, Zhennan Jiang, Ziyu Wang, Shiyu Liang, Huazhe Xu
+                        </p>
+                        <div class="paper-links">
+                            <a href="https://lei-kun.github.io/RL-100/">Website</a>
+                            <a href="https://arxiv.org/abs/2510.14830">arXiv</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="paper" data-representative="false">
+                    <img src="assets/paper/TelePreview.gif" alt="TelePreview project thumbnail" />
+                    <div>
+                        <h3>TelePreview: A User-Friendly Teleoperation System with Virtual Arm Assistance for Enhanced Effectiveness</h3>
+                        <p class="authors">
+                            Jingxiang Guo*, Jiayu Luo*, <strong>Zhenyu Wei*</strong>, Yiwen Hou, Zhixuan Xu, Xiaoyi Lin, Chongkai Gao, Lin Shao
+                        </p>
+                        <p class="award-line">
+                            <button class="text-modal-link" type="button" data-modal-open="telepreview-award">Best Paper Award</button> · ICRA 2025 @ Human-Centric Multilateral Teleoperation
+                        </p>
+                        <div class="paper-links">
+                            <a href="https://nus-lins-lab.github.io/telepreview-web/">Website</a>
+                            <a href="https://arxiv.org/abs/2412.13548">arXiv</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="paper" data-representative="false">
+                    <img src="assets/paper/MetaFold.png" alt="MetaFold project thumbnail" style="width: 90%; margin: 0 auto;" />
+                    <div>
+                        <h3>MetaFold: Language-Guided Multi-Category Garment Folding Framework via Trajectory Generation and Foundation Model</h3>
+                        <p class="authors">Haonan Chen*, Junxiao Li*, Ruihai Wu, Yiwei Liu, Yiwen Hou, Zhixuan Xu,
+                            Jingxiang Guo, Chongkai Gao, <strong>Zhenyu Wei</strong>, Shensi Xu, Jiaqi Huang, Lin Shao
+                        </p>
+                        <p class="venue">
+                            <span class="venue-badge">IROS 2025 Oral</span> International Conference on Intelligent Robots and Systems
+                        </p>
+                        <div class="paper-links">
+                            <a href="https://meta-fold.github.io/">Website</a>
+                            <a href="https://arxiv.org/abs/2503.08372">arXiv</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="paper featured" data-representative="true">
+                    <img src="assets/paper/drograsp.png" alt="D(R,O) Grasp project thumbnail" style="width: 90%; margin: 0 auto;" />
+                    <div>
+                        <h3>$\mathcal{D(R,O)}$ Grasp: A Unified Representation of Robot and Object Interaction for Cross-Embodiment Dexterous Grasping</h3>
+                        <p class="authors">
+                            <strong>Zhenyu Wei*</strong>, Zhixuan Xu*, Jingxiang Guo, Yiwen Hou, Chongkai Gao, Zhehao Cai, Jiayu Luo, Lin Shao
+                        </p>
+                        <p class="venue">
+                            <span class="venue-badge">ICRA 2025</span> International Conference on Robotics and Automation
+                        </p>
+                        <p class="award-line">
+                            <button class="text-modal-link" type="button" data-modal-open="dro-icra-award">ICRA 2025 Best Paper Award on Robot Manipulation and Locomotion</button>
+                        </p>
+                        <p class="award-line">
+                            <button class="text-modal-link" type="button" data-modal-open="dro-corl-award">Best Robotics Paper Award</button> · CoRL 2024 @ MAPoDeL
+                        </p>
+                        <div class="paper-links">
+                            <a href="https://nus-lins-lab.github.io/drograspweb/">Website</a>
+                            <a href="https://arxiv.org/abs/2410.01702">arXiv</a>
+                            <a href="https://github.com/zhenyuwei2003/DRO-Grasp">Code</a>
+                            <a href="https://mp.weixin.qq.com/s/csdm7B3G9__QpwEtoIQxuA">Media</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="paper" data-representative="false">
+                    <img src="assets/paper/IRC.png" alt="IRC project thumbnail" style="width: 75%; margin: 0 auto;" />
+                    <div>
+                        <h3>Auto-Pairing Positives through Implicit Relation Circulation for Discriminative Self-Learning</h3>
+                        <p class="authors">
+                            Bo Pang, <strong>Zhenyu Wei</strong>, Jingli Lin, Cewu Lu
+                        </p>
+                        <p class="venue">
+                            <span class="venue-badge">TPAMI 2025</span> IEEE Transactions on Pattern Analysis and Machine Intelligence
+                        </p>
+                        <div class="paper-links">
+                            <a href="https://ieeexplore.ieee.org/document/10835191">IEEE Xplore</a>
+                            <a href="https://github.com/BoPang1996/IRC">Code</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="honors" class="section two-column">
+            <div class="section-title"><span>03</span>
+                <h2>Selected Honors</h2>
+            </div>
+            <ul class="honor-list">
+                <li><strong>2025</strong> ICRA 2025 Best Paper Award on Robot Manipulation and Locomotion</li>
+                <li><strong>2025</strong> Best Paper Award, ICRA 2025 @ Human-Centric Multilateral Teleoperation
+                    Workshop</li>
+                <li><strong>2025</strong> Zhiyuan Outstanding Scholarship, Top 30 Undergraduates at SJTU</li>
+                <li><strong>2024</strong> Best Robotics Paper Award, CoRL 2024 @ MAPoDeL Workshop</li>
+            </ul>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="section-title"><span>04</span>
+                <h2>Experience</h2>
+            </div>
+            <div class="timeline">
+                <article class="timeline-item">
+                    <img src="assets/experience/UNC-CH.png" alt="UNC logo" />
+                    <div>
+                        <h3>University of North Carolina at Chapel Hill, USA</h3>
+                        <span>2025.08 – Present</span>
+                        <p><strong>Ph.D. in Computer Science</strong> · Research Advisor: Prof. <a href="https://dingmyu.github.io/">Mingyu Ding</a></p>
+                    </div>
+                </article>
+                <article class="timeline-item">
+                    <img src="assets/experience/SQZ.png" alt="Shanghai Qi Zhi Institute logo" />
+                    <div>
+                        <h3>Tsinghua Embodied AI Lab (TEA Lab) · Shanghai Qi Zhi Institute, China</h3>
+                        <span>2025.02 – 2025.07</span>
+                        <p><strong>Research Intern</strong> · Research Advisor: Prof. <a href="http://hxu.rocks/"> Huazhe Xu</a></p>
+                    </div>
+                </article>
+                <article class="timeline-item">
+                    <img src="assets/experience/NUS.png" alt="NUS LinS Lab logo" />
+                    <div>
+                        <h3>LinS Lab · National University of Singapore, Singapore</h3>
+                        <span>2024.06 – 2025.02</span>
+                        <p><strong>Research Assistant</strong> · Research Advisor: Prof. <a href="https://linsats.github.io/">Lin Shao</a></p>
+                    </div>
+                </article>
+                <article class="timeline-item">
+                    <img src="assets/experience/SJTU.png" alt="SJTU MVIG logo" />
+                    <div>
+                        <h3>Machine Vision and Intelligence Group (MVIG) · Shanghai Jiao Tong University, China</h3>
+                        <span>2022.10 – 2024.05</span>
+                        <p><strong>Research Intern</strong> · Research Advisor: Prof. <a href="https://www.mvig.org/">Cewu Lu</a></p>
+                    </div>
+                </article>
+                <article class="timeline-item">
+                    <img src="assets/experience/SJTU.png" alt="SJTU logo" />
+                    <div>
+                        <h3>Shanghai Jiao Tong University, China</h3>
+                        <span>2021.09 – 2025.06</span>
+                        <p><strong>B.Eng. in Computer Science (Zhiyuan Honor Degree)</strong> · GPA: 4.0/4.3</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Thanks for visiting! Feel free to use this template, and don’t hesitate to contact me if you have any questions.</p>
+        <p>Last Update: Apr, 2026.</p>
+    </footer>
+
+    <div class="modal" id="wechat-modal" aria-hidden="true">
+        <div class="modal-content"><button class="close" type="button" data-modal-close
+            aria-label="Close">&times;</button><img src="assets/WeChat.jpg" alt="WeChat QR Code" />
+        </div>
+    </div>
+    <div class="modal" id="telepreview-award" aria-hidden="true">
+        <div class="modal-content wide"><button class="close" type="button" data-modal-close
+            aria-label="Close">&times;</button><img
+            src="assets/award/Best Paper Award @ ICRA 2025 Human-Centric Multilateral Teleoperation Workshop.png"
+            alt="Best Paper Award at ICRA 2025 Human-Centric Multilateral Teleoperation Workshop" />
+        </div>
+    </div>
+    <div class="modal" id="dro-icra-award" aria-hidden="true">
+        <div class="modal-content wide"><button class="close" type="button" data-modal-close
+            aria-label="Close">&times;</button><img
+            src="assets/award/ICRA 2025 Best Paper Award on Robot Manipulation and Locomotion.jpg"
+            alt="ICRA 2025 Best Paper Award on Robot Manipulation and Locomotion" />
+        </div>
+    </div>
+    <div class="modal" id="dro-corl-award" aria-hidden="true">
+        <div class="modal-content wide"><button class="close" type="button" data-modal-close
+            aria-label="Close">&times;</button><img
+            src="assets/award/Best Robotics Paper Award @ CoRL 2024 MAPoDeL Workshop.jpg"
+            alt="Best Robotics Paper Award at CoRL 2024 MAPoDeL Workshop" />
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('[data-modal-open]').forEach((button) => {
+            button.addEventListener('click', () => {
+                const modal = document.getElementById(button.dataset.modalOpen);
+                if (modal) modal.classList.add('is-visible');
+            });
+        });
+        document.querySelectorAll('.modal').forEach((modal) => {
+            modal.addEventListener('click', (event) => {
+                if (event.target === modal || event.target.hasAttribute('data-modal-close')) modal.classList.remove('is-visible');
+            });
+        });
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') document.querySelectorAll('.modal.is-visible').forEach((modal) => modal.classList.remove('is-visible'));
+        });
+
+        const filterButtons = document.querySelectorAll('[data-paper-filter]');
+        const papers = document.querySelectorAll('.paper-list .paper');
+        filterButtons.forEach((button) => {
+            button.addEventListener('click', () => {
+                const mode = button.dataset.paperFilter;
+                filterButtons.forEach((item) => item.classList.toggle('is-active', item === button));
+                papers.forEach((paper) => {
+                    const showPaper = mode === 'all' || paper.dataset.representative === 'true';
+                    paper.classList.toggle('is-hidden', !showPaper);
+                });
+            });
+        });
     </script>
 
-    <!-- visitor statistics -->
-    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-  </head>
+    <script type="text/javascript" id="clustrmaps"
+        src="//cdn.clustrmaps.com/map_v2.js?cl=808080&w=320&t=tt&d=tOPkwWLaviaj1txDSWt1MIPXQO5jh3JgLgwv-uhQWwc&co=00000000&ct=c0c0c0&cmo=66c0ff&cmn=ff9547">
+    </script>
+</body>
 
-  <body>
-    <table style="width:100%; max-width:900px; border:0px; border-spacing:0px; border-collapse:separate; margin-left:auto; margin-right:auto;">
-      <tbody>
-        <tr style="padding:0px">
-          <td style="padding:0px">
-
-            <!-- Introduction & Profile Photo -->
-            <table style="width:100%; border:0px; border-spacing:0px; border-collapse:separate; margin-left:auto; margin-right:auto;">
-              <tbody>
-                <tr style="padding:0px">
-
-                  <!-- introduction -->
-                  <td style="padding: 20px; width:64%; vertical-align:middle">
-                    <p class="webname" style="text-align: center;">
-                      Zhenyu Wei &nbsp;|&nbsp; 卫振宇
-                    </p>
-
-                    <p>
-                      I am a first-year CS Ph.D. student at University of North Carolina at Chapel Hill, advised by Prof. <a href="https://dingmyu.github.io/">Mingyu Ding</a>.
-                      I received my Bachelor's degree in Computer Science at at <a href="https://en.sjtu.edu.cn/">Shanghai Jiao Tong University</a>. 
-                      During my undergraduate years, I was fortunate to be advised by Prof. <a href="https://linsats.github.io/">Lin Shao</a> at National University of Singapore and Prof. <a href="https://www.mvig.org/">Cewu Lu</a> at Shanghai Jiao Tong University.
-                    </p>
-
-                    <p style="text-align:center; margin-top: 0px; margin-bottom: 0px;">
-                      <a href="mailto:wzhenyu@cs.unc.edu">Email</a> &nbsp;/&nbsp;
-                      <a href="data/CV_2603.pdf">CV</a> &nbsp;/&nbsp;
-                      <a href="https://github.com/zhenyuwei2003">Github</a> &nbsp;/&nbsp;
-                      <a href="https://scholar.google.com/citations?user=RlQ3QLMAAAAJ">Google Scholar</a> &nbsp;/&nbsp;
-                      <a href="javascript:void(0)" onclick="openWeChatModal()">WeChat</a>
-                    </p>
-
-                    <!-- WeChat image function -->
-                    <div id="WeChatModal" class="modal">
-                      <div class="modal-content">
-                        <span class="close" onclick="closeWeChatModal()">&times;</span>
-                        <img src="images/WeChat.jpg" alt="WeChat QR Code" style="width: 100%;">
-                      </div>
-                    </div>
-                    
-                    <script>
-                      function openWeChatModal() {
-                        document.getElementById("WeChatModal").style.display = "block";
-                      }
-                      function closeWeChatModal() {
-                        document.getElementById("WeChatModal").style.display = "none";
-                      }
-                      window.onload = function() {
-                        document.getElementById("WeChatModal").style.display = "none";
-                      };
-                      window.onclick = function(event) {
-                        var modal = document.getElementById("WeChatModal");
-                        if (event.target == modal) {
-                          modal.style.display = "none";
-                        }
-                      }
-                    </script>
-                  </td>
-
-                  <!-- profile photo -->
-                  <td style="padding: 20px; padding-left: 0px; padding-bottom: 0px; width:20%; max-width:40%">
-                    <img 
-                    style="width:100%; max-width:100%; object-fit: cover; border-radius: 0%; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);" 
-                    alt="profile photo" 
-                    src="images/zhenyuwei.png" 
-                    class="hoverZoomLink">
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!-- News -->
-            <table style="width:100%; border:0px; border-spacing:0px; border-collapse:separate; margin-left:auto; margin-right:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding-top: 0px; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; width:100%; vertical-align:middle">
-                    <h2><b>News</b></h2>
-                    <ul class="news-list">
-                      <li> [2026/04] 🎉 <a href="https://zhenyuwei2003.github.io/OHRA/">OHRA</a> has been accepted to RSS 2026! </li>
-                      <li> [2025/06] 🎉 <a href="https://meta-fold.github.io/">MetaFold</a> has been accepted to IROS 2025 as <strong>oral presentation</strong>! </li>
-                      <li> [2025/05] 🏅 <a href="https://nus-lins-lab.github.io/drograspweb/">$\small \mathcal{D(R, O)}$ Grasp</a> won the <strong style="color: red;">ICRA 2025 Best Paper Award on Robot Manipulation and Locomotion</strong>,
-                           and <a href="https://nus-lins-lab.github.io/telepreview-web/">TelePreview</a> won the <strong style="color: red;">Best Paper Award</strong> at ICRA 2025 Workshop on Human-Centric Multilateral Teleoperation! </li>
-                      <!-- <li> [2025/04] 🏅 <a href="https://nus-lins-lab.github.io/drograspweb/">$\small \mathcal{D(R, O)}$ Grasp</a> has been selected as an <strong style="color: red;">ICRA 2025 Best Paper Award Finalist</strong>! </li> -->
-                      <li> [2025/01] 🎉 <a href="https://nus-lins-lab.github.io/drograspweb/">$\small \mathcal{D(R, O)}$ Grasp</a> has been accepted to ICRA 2025! </li>
-                      <li> [2024/12] 🎉 <a href="https://ieeexplore.ieee.org/document/10835191">IRC</a> has been accepted to TPAMI! </li>
-                      <li> [2024/11] 🏅 <a href="https://nus-lins-lab.github.io/drograspweb/">$\small \mathcal{D(R, O)}$ Grasp</a> won the <strong style="color: red;">Best Robotics Paper Award</strong> at CoRL 2024 Morphology-Aware Policy and Design Learning Workshop! </li>
-                    </ul>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!-- Research Interest -->
-            <table style="width:100%; border:0px; border-spacing:0px; border-collapse:separate; margin-left:auto; margin-right:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding-top: 0px; padding-bottom: 0px; padding-left: 20px; padding-right: 20px; width:100%; vertical-align:middle">
-                    <h2><b>Research</b></h2>
-                    <p style="margin-top: 10px; margin-bottom: 5px;">
-                      My research focuses on dexterous manipulation, with an emphasis on cross-embodiment learning. I aim to develop unified 
-                      representations of robotic hands and actions, enabling general policies that transfer across different embodiments.
-                    </p>
-                    <p style="margin-top: 0px; margin-bottom: 10px;">
-                      Papers sorted by recency. Representative papers are <span style="background-color: rgba(102, 192, 255, 0.2);">highlighted</span>.
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!-- Paper List -->
-            <table style="width:100%; border:0px; border-spacing:0px; border-collapse:separate; margin-left:auto; margin-right:auto;">
-              <tbody>
-                <!-- OHRA -->
-                <tr style="background-color: rgba(102, 192, 255, 0.15);">
-                  <td style="padding:10px; width:30%; vertical-align:middle">
-                    <img src='images/OHRA.png' style="width:100%; height:auto; box-shadow: 0 3px 12px 0 #66c0ff;">
-                  </td>
-    
-                  <td style="padding:10px; width:70%; vertical-align:middle">
-                    <span class="papertitle">
-                      One Hand to Rule Them All: Canonical Representations for Unified Dexterous Manipulation
-                    </span>
-                    <br>
-                    <i>
-                      <span class="strong-author">Zhenyu Wei</span>,
-                      <span class="author">Yunchao Yao</span>,
-                      <span class="author">Mingyu Ding</span>
-                    </i>
-                    <br>
-    
-                    <a href="https://zhenyuwei2003.github.io/OHRA/">Website</a>
-                    &nbsp;/&nbsp;
-                    <a href="https://arxiv.org/abs/2602.16712">arXiv</a>
-                    &nbsp;/&nbsp;
-                    <a href="https://github.com/zhenyuwei2003/OHRA">Code</a>
-                    &nbsp;/&nbsp;
-                    <a href="https://mp.weixin.qq.com/s/cp15BVTkxkZM7SH8wH4V8w">Media (机器之心)</a>
-                    <br>
-
-                    <div>
-                      <span class="accepted-venue">RSS 2026</span>&nbsp;
-                      <span class="accepted-venue-detail">Robotics: Science and Systems XXII</span>
-                    </div>
-                    
-                    <div class="TLDR">
-                      <strong>TL;DR:</strong> 
-                      Introduce a canonical hand representation that unifies diverse dexterous hands into a shared parameterized space, 
-                      enabling embodiment-agnostic policy learning and effective zero-shot generalization to novel hand morphologies 
-                      for dexterous grasping and manipulation tasks.
-                    </div>
-                  </td>
-                </tr>
-
-                <!-- VLA-VA -->
-                <tr>
-                  <td style="padding:10px; width:30%; vertical-align:middle">
-                    <img src='images/VLA-VA.jpg' style="width:100%; height:auto; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);">
-                  </td>
-    
-                  <td style="padding:10px; width:70%; vertical-align:middle">
-                    <span class="papertitle">
-                      When Vision Overrides Language: Evaluating and Mitigating Counterfactual Failures in VLAs
-                    </span>
-                    <br>
-                    <i>
-                      <span class="author">Yu Fang</span>,
-                      <span class="author">Yuchun Feng</span>,
-                      <span class="author">Dong Jing</span>,
-                      <span class="author">Jiaqi Liu</span>,
-                      <span class="author">Yue Yang</span>,
-                      <span class="strong-author">Zhenyu Wei</span>,
-                      <span class="author">Daniel Szafir</span>,
-                      <span class="author">Mingyu Ding</span>
-                    </i>
-                    <br>
-    
-                    <a href="https://vla-va.github.io/">Website</a>
-                    &nbsp;/&nbsp;
-                    <a href="https://arxiv.org/abs/2602.17659">arXiv</a>
-                    <br> 
-                    
-                    <div class="TLDR">
-                      <strong>TL;DR:</strong>
-                      We propose Counterfactual Action Guidance (CAG), a plug-and-play inference strategy that contrasts language-conditioned 
-                      and language-agnostic actions to mitigate vision shortcut biases in VLAs. CAG enables counterfactual comparison during 
-                      action selection for more faithful language following and robust control.
-                    </div>
-                  </td>
-                </tr>
-
-                <!-- MoH -->
-                <tr>
-                  <td style="padding:10px; width:30%; vertical-align:middle">
-                    <img src='images/MoH.png' style="width:100%; height:auto; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);">
-                  </td>
-    
-                  <td style="padding:10px; width:70%; vertical-align:middle">
-                    <span class="papertitle">
-                      Mixture of Horizons in Action Chunking
-                    </span>
-                    <br>
-                    <i>
-                      <span class="author">Dong Jing</span>,
-                      <span class="author">Gang Wang</span>,
-                      <span class="author">Jiaqi Liu</span>,
-                      <span class="author">Weiliang Tang</span>,
-                      <span class="author">Zelong Sun</span>,
-                      <span class="author">Yunchao Yao</span>,
-                      <span class="strong-author">Zhenyu Wei</span>,
-                      <span class="author">Yunhui Liu</span>,
-                      <span class="author">Zhiwu Lu</span>,
-                      <span class="author">Mingyu Ding</span>
-                    </i>
-                    <br>
-    
-                    <a href="https://timsty1.github.io/moh/">Website</a>
-                    &nbsp;/&nbsp;
-                    <a href="https://arxiv.org/abs/2511.19433">arXiv</a>
-                    &nbsp;/&nbsp;
-                    <a href="https://github.com/Timsty1/MixtureOfHorizons">Code</a>
-                    <br> 
-                    
-                    <div class="TLDR">
-                      <strong>TL;DR:</strong>
-                      We propose Mixture of Horizons (MoH), a plug-and-play strategy that fuses multiple horizons within a single policy to 
-                      inherit the strengths of both with minimal training or inference overhead. MoH enables Dynamic Inference, selecting 
-                      stable actions through cross-horizon consensus for higher efficiency and robustness.
-                    </div>
-                  </td>
-                </tr>
-
-                <!-- RL-100 -->
-                <tr style="background-color: rgba(102, 192, 255, 0.15);">
-                  <td style="padding:10px; width:30%; vertical-align:middle">
-                    <img src='images/RL-100.gif' style="width:100%; height:auto; box-shadow: 0 3px 12px 0 #66c0ff;">
-                  </td>
-    
-                  <td style="padding:10px; width:70%; vertical-align:middle">
-                    <span class="papertitle">
-                      RL-100: Performant Robotic Manipulation with Real-World Reinforcement Learning
-                    </span>
-                    <br>
-                    <i>
-                      <span class="author">Kun Lei</span>*,
-                      <span class="author">Huanyu Li</span>*,
-                      <span class="author">Dongjie Yu</span>*,
-                      <span class="strong-author">Zhenyu Wei</span>*,
-                      <span class="author">Lingxiao Guo</span>,
-                      <span class="author">Zhennan Jiang</span>,
-                      <span class="author">Ziyu Wang</span>,
-                      <span class="author">Shiyu Liang</span>,
-                      <span class="author">Huazhe Xu</span>
-                    </i>
-                    <br>
-    
-                    <a href="https://lei-kun.github.io/RL-100/">Website</a>
-                    &nbsp;/&nbsp;
-                    <a href="https://arxiv.org/abs/2510.14830">arXiv</a>
-                    <!-- &nbsp;/&nbsp;
-                    Code -->
-                    <br> 
-    
-                    <!-- <div>
-                      <span class="accepted-venue">IROS 2025</span>&nbsp;
-                      <span class="accepted-venue-detail">International Conference on Intelligent Robots and Systems</span>
-                      <div style="height:3px;"></div>
-                      <span class="strong-venue">
-                        <i class="fa-solid fa-star"></i> Oral Presentation <i class="fa-solid fa-star"></i>
-                      </span>
-                    </div> -->
-                    
-                    <div class="TLDR">
-                      <strong>TL;DR:</strong> 
-                      RL‑100 introduces a three-stage real-world learning pipeline combining imitation learning, offline RL, and online RL, 
-                      leveraging learned visuomotor policies to achieve 100% task success across seven diverse manipulation tasks, while 
-                      enabling strong zero- and few-shot generalization to new dynamics and perturbations.
-                    </div>
-                  </td>
-                </tr>
-
-                <!-- TelePreview -->
-                <tr>
-                  <td style="padding:10px; width:30%; vertical-align:middle">
-                    <img src='images/TelePreview.gif' style="width:100%; height:auto; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);">
-                  </td>
-
-                  <td style="padding:10px; width:70%; vertical-align:middle">
-                    <span class="papertitle">
-                      TelePreview: A User-Friendly Teleoperation System with Virtual Arm Assistance for Enhanced Effectiveness
-                    </span>
-                    <br>
-
-                    <i>
-                      <span class="author">Jingxiang Guo*</span>,
-                      <span class="author">Jiayu Luo*</span>,
-                      <span class="strong-author">Zhenyu Wei*</span>,
-                      <span class="author">Yiwen Hou</span>,
-                      <span class="author">Zhixuan Xu</span>,
-                      <span class="author">Xiaoyi Lin</span>,
-                      <span class="author">Chongkai Gao</span>,
-                      <span class="author">Lin Shao</span>
-                    </i>
-                    <br>
-                    
-                    <a href="https://nus-lins-lab.github.io/telepreview-web/">Website</a>
-                    &nbsp;/&nbsp;
-                    <a href="https://arxiv.org/abs/2412.13548">arXiv</a>
-                    <!-- &nbsp;/&nbsp;
-                    Code (Coming soon) -->
-                    <br>
-
-                    <div>
-                      <!-- <span class="accepted-venue">???? 2025</span>&nbsp;
-                      <span class="accepted-venue-detail">----------</span> -->
-                      <div style="height:3px;"></div>
-                      <span class="award-venue">
-                        <i class="fa-solid fa-trophy"></i>
-                        <a href="javascript:void(0)" class="award-venue" onclick="openModal('TelePreviewAwardICRA')">
-                          Best Paper Award</a>, ICRA 2025
-                        <a href="https://sites.google.com/view/icra-2025-workshop?usp=sharing" style="color: #ffa03c">
-                          @ Human-Centric Multilateral Teleoperation
-                        </a>
-                        <i class="fa-solid fa-trophy"></i>
-                      </span>
-                      <!-- <br>
-                      <span class="strong-venue">
-                        <i class="fa-solid fa-star"></i> 
-                        ICRA 2025
-                        <a href="https://sites.google.com/view/icra-2025-workshop?usp=sharing" style="color: #66c0ff">
-                          Human-Centric Multilateral Teleoperation Workshop (Spotlight)
-                        </a>
-                        <i class="fa-solid fa-star"></i>
-                      </span> -->
-
-                      <div id="TelePreviewAwardICRA" class="modal">
-                        <div class="modal-content" style="width: 50%; max-width: 800px; margin-top: 8%;">
-                          <span class="close" onclick="closeModal('TelePreviewAwardICRA')">&times;</span>
-                          <img src="images/Best Paper Award @ ICRA 2025 Human-Centric Multilateral Teleoperation Workshop.png" alt="Best Paper Award @ ICRA 2025 Human-Centric Multilateral Teleoperation Workshop" style="width: 100%;">
-                        </div>
-                      </div>
-
-                      <script>
-                        function openModal(id) {
-                          document.getElementById(id).style.display = "block";
-                        }
-                        function closeModal(id) {
-                          document.getElementById(id).style.display = "none";
-                        }
-                        window.onload = function () {
-                          document.getElementById("TelePreviewAwardICRA").style.display = "none";
-                        };
-                        window.onclick = function (event) {
-                          const modals = ["TelePreviewAwardICRA"];
-                          modals.forEach(id => {
-                            const modal = document.getElementById(id);
-                            if (event.target == modal) {
-                              modal.style.display = "none";
-                            }
-                          });
-                        };
-                      </script>
-
-                    </div>
-                    
-                    <div class="TLDR">
-                      <strong>TL;DR:</strong>
-                      Implement a low-cost teleoperation system utilizing data gloves and IMU sensors, paired with an assistant 
-                      module that improves data collection process by visualizing future robot operations through visual previews.
-                    </div>
-                  </td>
-                </tr>
-                
-                <!-- MetaFold -->
-                <tr>
-                  <td style="padding:10px; width:30%; vertical-align:middle">
-                    <img src='images/MetaFold.png' style="width:100%; height:auto; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);">
-                  </td>
-    
-                  <td style="padding:10px; width:70%; vertical-align:middle">
-                    <span class="papertitle">
-                      MetaFold: Language-Guided Multi-Category Garment Folding Framework via Trajectory Generation and Foundation Model
-                    </span>
-                    <br>
-                    <i>
-                      <span class="author">Haonan Chen</span>*,
-                      <span class="author">Junxiao Li</span>*,
-                      <span class="author">Ruihai Wu</span>,
-                      <span class="author">Yiwei Liu</span>,
-                      <span class="author">Yiwen Hou</span>,
-                      <span class="author">Zhixuan Xu</span>,
-                      <span class="author">Jingxiang Guo</span>,
-                      <span class="author">Chongkai Gao</span>,
-                      <span class="strong-author">Zhenyu Wei</span>,
-                      <span class="author">Shensi Xu</span>,
-                      <span class="author">Jiaqi Huang</span>,
-                      <span class="author">Lin Shao</span>
-                    </i>
-                    <br>
-    
-                    <a href="https://meta-fold.github.io/">Website</a>
-                    &nbsp;/&nbsp;
-                    <a href="https://arxiv.org/abs/2503.08372">arXiv</a>
-                    <!-- &nbsp;/&nbsp;
-                    Code -->
-                    <br> 
-    
-                    <div>
-                      <span class="accepted-venue">IROS 2025</span>&nbsp;
-                      <span class="accepted-venue-detail">International Conference on Intelligent Robots and Systems</span>
-                      <div style="height:3px;"></div>
-                      <span class="strong-venue">
-                        <i class="fa-solid fa-star"></i> Oral Presentation <i class="fa-solid fa-star"></i>
-                      </span>
-                    </div>
-                    
-                    <div class="TLDR">
-                      <strong>TL;DR:</strong> 
-                      MetaFold employs language-guided point cloud trajectories for task planning and a foundation model for
-                      action prediction, enabling better generalization across garments and instructions.
-                    </div>
-                  </td>
-                </tr>
-
-                <!-- D(R,O) Grasp -->
-                <tr style="background-color: rgba(102, 192, 255, 0.15);">
-                  <td style="padding:10px; width:25%; vertical-align:middle">
-                    <img src='images/drograsp.png' style="width:100%; height:auto; box-shadow: 0 3px 12px 0 #66c0ff;">
-                  </td>
-
-                  <td style="padding:10px; width:75%; vertical-align:middle">
-                    <span class="papertitle">
-                      $\mathcal{D(R,O)}$ Grasp: A Unified Representation of Robot and Object Interaction for Cross-Embodiment Dexterous Grasping
-                    </span>
-                    <br>
-
-                    <i>
-                      <span class="strong-author">Zhenyu Wei</span>*,
-                      <span class="author">Zhixuan Xu</span>*,
-                      <span class="author">Jingxiang Guo</span>,
-                      <span class="author">Yiwen Hou</span>,
-                      <span class="author">Chongkai Gao</span>,
-                      <span class="author">Zhehao Cai</span>,
-                      <span class="author">Jiayu Luo</span>,
-                      <span class="author">Lin Shao</span>
-                    </i>
-                    <br>
-                    
-                    <a href="https://nus-lins-lab.github.io/drograspweb/">Website</a>
-                    &nbsp;/&nbsp;
-                    <a href="https://arxiv.org/abs/2410.01702">arXiv</a>
-                    &nbsp;/&nbsp;
-                    <a href="https://github.com/zhenyuwei2003/DRO-Grasp">Code</a>
-                    &nbsp;/&nbsp;
-                    <a href="https://mp.weixin.qq.com/s/csdm7B3G9__QpwEtoIQxuA">Media (机器之心)</a>
-                    <br>
-
-                    <div>
-                      <span class="accepted-venue">ICRA 2025</span>&nbsp;
-                      <span class="accepted-venue-detail">International Conference on Robotics and Automation</span>
-                      <div style="height:3px;"></div>
-                      <span class="award-venue">
-                        <i class="fa-solid fa-trophy"></i>
-                        <a href="javascript:void(0)" class="award-venue" onclick="openModal('DROAwardICRA')">
-                          ICRA 2025 Best Paper Award on Robot Manipulation and Locomotion
-                        </a>
-                        <i class="fa-solid fa-trophy"></i>
-                      </span>
-                      <br>
-                      <span class="award-venue">
-                        <i class="fa-solid fa-trophy"></i>
-                        <a href="javascript:void(0)" class="award-venue" onclick="openModal('DROAwardCoRL')">
-                          Best Robotics Paper Award</a>, CoRL 2024
-                        <a href="https://sites.google.com/view/corl-mapodel-workshop/home" style="color: #ffa03c">
-                          @ MAPoDeL
-                        </a>
-                        <i class="fa-solid fa-trophy"></i>
-                      </span>
-                      <!-- <br>
-                      <span class="strong-venue">
-                        <i class="fa-solid fa-star"></i>
-                        CoRL 2024 
-                        <a href="https://sites.google.com/view/corl-mapodel-workshop/home" style="color: #66c0ff">MAPoDeL Workshop</a> (Oral) & 
-                        <a href="https://dex-manipulation.github.io/corl2024/index.html" style="color: #66c0ff">LFDM Workshop</a> (Spotlight) 
-                        <i class="fa-solid fa-star"></i>
-                      </span> -->
-
-                      <div id="DROAwardICRA" class="modal">
-                        <div class="modal-content" style="width: 50%; max-width: 800px; margin-top: 6%;">
-                          <span class="close" onclick="closeModal('DROAwardICRA')">&times;</span>
-                          <img src="images/ICRA 2025 Best Paper Award on Robot Manipulation and Locomotion.jpg" alt="ICRA 2025 Best Paper Award on Robot Manipulation and Locomotion" style="width: 100%;">
-                        </div>
-                      </div>
-
-                      <div id="DROAwardCoRL" class="modal">
-                        <div class="modal-content" style="width: 50%; max-width: 800px; margin-top: 8%;">
-                          <span class="close" onclick="closeModal('DROAwardCoRL')">&times;</span>
-                          <img src="images/Best Robotics Paper Award @ CoRL 2024 MAPoDeL Workshop.jpg" alt="Best Robotics Paper Award @ CoRL 2024 MAPoDeL Workshop" style="width: 100%;">
-                        </div>
-                      </div>
-                      
-                      <script>
-                        function openModal(id) {
-                          document.getElementById(id).style.display = "block";
-                        }
-                        function closeModal(id) {
-                          document.getElementById(id).style.display = "none";
-                        }
-                        window.onload = function () {
-                          document.getElementById("DROAwardICRA").style.display = "none";
-                          document.getElementById("DROAwardCoRL").style.display = "none";
-                        };
-                        window.onclick = function (event) {
-                          const modals = ["DROAwardICRA", "DROAwardCoRL"];
-                          modals.forEach(id => {
-                            const modal = document.getElementById(id);
-                            if (event.target == modal) {
-                              modal.style.display = "none";
-                            }
-                          });
-                        };
-                      </script>
-                    </div>
-                    
-                    <div class="TLDR">
-                      <strong>TL;DR:</strong> 
-                      Introduce $\mathcal{D(R,O)}$, a novel interaction-centric representation for dexterous grasping tasks that 
-                      goes beyond traditional robot-centric and object-centric approaches, enabling robust generalization across 
-                      diverse robotic hands and objects.
-                    </div>
-                  </td>
-                </tr>
-
-                <!-- IRC -->
-                <tr>
-                  <td style="padding:10px; width:25%; vertical-align:middle">
-                    <img src='images/IRC.png' style="width:100%; height:auto; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);">
-                  </td>
-    
-                  <td style="padding:10px; width:75%; vertical-align:middle">
-                    <span class="papertitle">
-                      Auto-Pairing Positives through Implicit Relation Circulation for Discriminative Self-Learning
-                    </span>
-                    <br>
-    
-                    <i>
-                      <span class="author">Bo Pang</span>,
-                      <span class="strong-author">Zhenyu Wei</span>, 
-                      <span class="author">Jingli Lin</span>,
-                      <span class="author">Cewu Lu</span>
-                    </i>
-                    <br>
-    
-                    <a href="https://ieeexplore.ieee.org/document/10835191">IEEE Xplore</a>
-                    &nbsp;/&nbsp;
-                    <a href="https://github.com/BoPang1996/IRC">Code</a>
-                    <br> 
-    
-                    <div>
-                      <span class="accepted-venue">TPAMI 2025</span>&nbsp;
-                      <span class="accepted-venue-detail">IEEE Transactions on Pattern Analysis and Machine Intelligence</span>
-                    </div>
-                    
-                    <div class="TLDR">
-                      <strong>TL;DR:</strong> 
-                      Introduce Implicit Relation Circulation (IRC), a self-supervised learning framework that discovers positive pairs 
-                      automatically by performing random walks across feature groups and enforcing cycle consistency with a simpler task, 
-                      without requiring explicit matching.
-                    </div>
-                  </td>
-                </tr>
-                  
-              </tbody>
-            </table>
-
-            <!-- Honor -->
-            <table style="width:100%; border:0px; border-spacing:0px; border-collapse:separate; margin-top: 20px; margin-left:auto; margin-right:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding-top: 0px; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; width:100%; vertical-align:middle">
-                    <h2><b>Selected Honors</b></h2>
-                    <ul class="award-list">
-                      <li>
-                        <span style="font-size: 16px;"><b>ICRA 2025 Best Paper Award on Robot Manipulation and Locomotion</b></span>
-                        <span style="font-size: 16px;" class="year"><i>2025</i></span>
-                      </li>
-                      <!-- <li>
-                        <span style="font-size: 16px;"><b>ICRA 2025 Best Paper Award Finalist</b></span>
-                        <span style="font-size: 16px;" class="year"><i>2025</i></span>
-                      </li> -->
-                      <li>
-                        <span style="font-size: 16px;"><b>Best Paper Award</b>, ICRA 2025 @ Human-Centric Multilateral Teleoperation Workshop</span>
-                        <span style="font-size: 16px;" class="year"><i>2025</i></span>
-                      </li>
-                      <li>
-                        <span style="font-size: 16px;">Zhiyuan Outstanding Scholarship (Top 30 Undergraduates at SJTU)</span>
-                        <span style="font-size: 16px;" class="year"><i>2025</i></span>
-                      </li>
-                      <li>
-                        <span style="font-size: 16px;">Shanghai Outstanding Graduate (Top 5% of Graduates at SJTU)</span>
-                        <span style="font-size: 16px;" class="year"><i>2025</i></span>
-                      </li>
-                      <li>
-                        <span style="font-size: 16px;"><b>Best Robotics Paper Award</b>, CoRL 2024 @ MAPoDeL Workshop</span>
-                        <span style="font-size: 16px;" class="year"><i>2024</i></span>
-                      </li>
-                      <li>
-                        <span style="font-size: 16px;">Outstanding Scholarship of Computer Science Alumni Fund (Top 5% in Major)</span>
-                        <span style="font-size: 16px;" class="year"><i>2024</i></span>
-                      </li>
-                      <li>
-                        <span style="font-size: 16px;">Huawei Scholarship (Top 5% in Major)</span>
-                        <span style="font-size: 16px;" class="year"><i>2023</i></span>
-                      </li>
-                      <li>
-                        <span style="font-size: 16px;">The Tung Foundation Scholarship (Top 5% in Major)</span>
-                        <span style="font-size: 16px;" class="year"><i>2022</i></span>
-                      </li>
-                      <li>
-                        <span style="font-size: 16px;">Zhiyuan Honors Scholarship (Top 10% Students at SJTU)</span>
-                        <span style="font-size: 16px;" class="year"><i>2021 - 2024</i></span>
-                      </li>
-                    </ul>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-              
-            <!-- Experience -->
-            <table style="width:100%; border:0px; border-spacing:0px; border-collapse:separate; margin-left:auto; margin-right:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding-top: 10px; padding-bottom: 10px; padding-left: 20px; padding-right: 20px;; width:100%; vertical-align:middle">
-                    <h2><b>Experience</b></h2>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <!-- UNC-CH -->
-            <table style="width:98%; margin-left:20px; border:none; padding:0px;">
-              <tbody>
-                <tr>
-                  <td style="padding:15px; width:15%; vertical-align:middle; padding-top:20px;">
-                    <img src="images/UNC-CH.png" style="width:100%; height:auto;">
-                  </td>
-                  <td style="padding-top:20px; padding-left:20px; padding-right:20px; padding-bottom: 24px; width:85%; vertical-align:top;">
-                    <h3>
-                      University of North Carolina at Chapel Hill, USA
-                      <span class="dates">2025.08 - Present</span>
-                    </h3>
-                    <b>Ph.D. in Computer Science</b>
-                    <br>
-                    Research Advisor: Prof. <a href="https://dingmyu.github.io/">Mingyu Ding</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!-- SQZ -->
-            <table style="width:98%; margin-left:20px; border:none; padding:0px;">
-              <tbody>
-                <tr>
-                  <td style="padding:25px; width:15%; vertical-align:middle; padding-top:15px;">
-                    <img src="images/SQZ.png" style="width:100%; height:auto;">
-                  </td>
-                  <td style="padding-top:20px; padding-left:20px; padding-right:20px; width:85%; vertical-align:top;">
-                    <h3>
-                      Shanghai Qi Zhi Institute, China
-                      <span class="dates">2025.02 - 2025.07</span>
-                    </h3>
-                    <b>Research Intern</b>
-                    <br>
-                    Research Advisor: Prof. <a href="http://hxu.rocks/">Huazhe Xu</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!-- NUS -->
-            <table style="width:98%; margin-left:20px; border:none; padding:0px;">
-              <tbody>
-                <tr>
-                  <td style="padding:25px; width:15%; vertical-align:middle; padding-top:15px; padding-bottom: 10px;">
-                    <img src="images/NUS.png" style="width:100%; height:auto;">
-                  </td>
-                  <td style="padding-top:20px; padding-left:20px; padding-right:20px; width:85%; vertical-align:top;">
-                    <h3>
-                      NUS LinS Lab, Singapore
-                      <span class="dates">2024.06 - 2025.02</span>
-                    </h3>
-                    <b>Research Assistant</b>
-                    <br>
-                    Research Advisor: Prof. <a href="https://linsats.github.io/">Lin Shao</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!-- MVIG -->
-            <table style="width:98%; margin-left:20px; border:none; padding:0px;">
-              <tbody>
-                <tr>
-                  <td style="padding:15px; width:15%; vertical-align:middle; padding-top:20px;">
-                    <img src="images/SJTU.png" style="width:100%; height:auto;">
-                  </td>
-                  <td style="padding-top:20px; padding-left:20px; padding-right:20px; width:85%; vertical-align:top;">
-                    <h3>
-                      SJTU Machine Vision and Intelligence Group (MVIG), China
-                      <span class="dates">2022.10 - 2024.05</span>
-                    </h3>
-                    <b>Research Intern</b>
-                    <br>
-                    Research Advisor: Prof. <a href="https://www.mvig.org/">Cewu Lu</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!-- SJTU -->
-            <table style="width:98%; margin-left:20px; border:none; padding:0px;">
-              <tbody>
-                <tr>
-                  <td style="padding:15px; width:15%; vertical-align:middle; padding-top:20px;">
-                    <img src="images/SJTU.png" style="width:100%; height:auto;">
-                  </td>
-                  <td style="padding-top:20px; padding-left:20px; padding-right:20px; width:85%; vertical-align:top;">
-                    <h3>
-                      Shanghai Jiao Tong University, China
-                      <span class="dates">2021.09 - 2025.06</span>
-                    </h3>
-                    <b>B.Eng. in Computer Science (Zhiyuan Honor Degree)</b>
-                    <br>
-                    <b>GPA:</b> 4.0/4.3
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-    
-            <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=808080&w=320&t=tt&d=tOPkwWLaviaj1txDSWt1MIPXQO5jh3JgLgwv-uhQWwc&co=ffffff&ct=c0c0c0&cmo=66c0ff&cmn=ff9547'></script>
-            
-            <!-- Footnote -->
-            <table style="width:100%; border:0px; border-spacing:0px; border-collapse:separate; margin-left:auto; margin-right:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:0px">
-                    <br>
-                    <p style="text-align:right; font-size:small;">
-                      Thank you for visiting 😊 Feel free to contact me if you have any questions.
-                      <br>
-                      <!-- <span id="busuanzi_container_site_pv">
-                        Total Page Views: <span id="busuanzi_value_site_pv"></span>
-                      </span> -->
-                      This website is designed based on <a href="https://jonbarron.info/" style="font-size: 12px;">Jon Barron</a>.
-                      Last Update: Mar, 2026
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </body>
 </html>
