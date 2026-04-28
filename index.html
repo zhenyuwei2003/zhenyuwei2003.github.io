@@ -23,6 +23,7 @@
 </head>
 
 <body>
+    <div id="page-scale">
     <header class="site-header">
         <nav class="nav" aria-label="Main navigation">
             <a class="brand" href="#">Zhenyu Wei</a>
@@ -286,8 +287,7 @@
             </div>
             <ul class="honor-list">
                 <li><strong>2025</strong> ICRA 2025 Best Paper Award on Robot Manipulation and Locomotion</li>
-                <li><strong>2025</strong> Best Paper Award, ICRA 2025 @ Human-Centric Multilateral Teleoperation
-                    Workshop</li>
+                <li><strong>2025</strong> Best Paper Award, ICRA 2025 @ Human-Centric Multilateral Teleoperation Workshop</li>
                 <li><strong>2025</strong> Zhiyuan Outstanding Scholarship, Top 30 Undergraduates at SJTU</li>
                 <li><strong>2024</strong> Best Robotics Paper Award, CoRL 2024 @ MAPoDeL Workshop</li>
             </ul>
@@ -407,6 +407,29 @@
     <script type="text/javascript" id="clustrmaps"
         src="//cdn.clustrmaps.com/map_v2.js?cl=808080&w=320&t=tt&d=tOPkwWLaviaj1txDSWt1MIPXQO5jh3JgLgwv-uhQWwc&co=00000000&ct=c0c0c0&cmo=66c0ff&cmn=ff9547">
     </script>
+    </div>
+
+    <script>
+    (function () {
+        const minWidth = 960;
+        const page = document.getElementById('page-scale');
+
+        function scalePage() {
+            if (window.innerWidth < minWidth) {
+                const scale = window.innerWidth / minWidth;
+                page.style.transform = `scale(${scale})`;
+                document.body.style.height = `${page.scrollHeight * scale}px`;
+            } else {
+                page.style.transform = 'none';
+                document.body.style.height = 'auto';
+            }
+        }
+
+        window.addEventListener('load', scalePage);
+        window.addEventListener('resize', scalePage);
+    })();
+    </script>
+
 </body>
 
 </html>
