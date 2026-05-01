@@ -387,8 +387,8 @@ time,
     display: grid;
     grid-template-columns: 300px minmax(0, 1fr);
     align-items: start;
-    gap: 1.15rem;
-    padding: .95rem;
+    gap: 1.5rem;
+    padding: 1rem;
     background: rgba(255, 255, 255, .86);
     border: 1px solid var(--line);
     border-radius: 14px;
@@ -478,7 +478,7 @@ time,
     border-radius: 14px;
     background: rgba(232, 246, 255, .72);
     box-shadow: 0 10px 26px rgba(22, 120, 185, .10);
-    padding-left: calc(.95rem + 5px);
+    padding-left: 1rem;
 }
 
 .paper.featured::before {
